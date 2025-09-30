@@ -1,3 +1,14 @@
+@font-face {
+    src: url("./police/tarekah-font/Tarekah-G330y.otf") format("opentype");
+    font-family: "Tarekah";
+}
+
+@font-face {
+    src: url("./police/Abhaya_Libre/AbhayaLibre-Regular.ttf") format("truetype");
+    font-family: "Abhaya Libre ";
+}
+
+
 body {
     background-color: rgb(33, 37, 41);
 }
