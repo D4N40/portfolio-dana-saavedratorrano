@@ -5,7 +5,7 @@
 
 @font-face {
     src: url("./police/Abhaya_Libre/AbhayaLibre-Regular.ttf") format("truetype");
-    font-family: "Abhaya Libre ";
+    font-family: "Abhaya Libre";
 }
 
 
@@ -36,10 +36,63 @@ nav {
     text-decoration: none;
     color: white;
     font-size: 32px;
-
+    font-family: "Abhaya Libre";
 
 }
 
 .lien a:hover {
     text-decoration: underline;
+}
+
+.en-tete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: grid;
+}
+
+h1 {
+    color: white;
+    font-family: "Tarekah";
+    font-weight: normal;
+    font-size: 150px;
+}
+
+.signature {
+    font-style: italic;
+    grid-area: 1/1/2/2;
+    opacity: 100%;
+    z-index: 4;
+
+}
+
+.signature.deux {
+    color: rgb(222, 226, 230);
+    opacity: 40%;
+    grid-area: 1/1/4/2;
+    padding: 10px 0px 0px 0px;
+    filter: blur(3px);
+    z-index: 3;
+}
+
+.signature.trois {
+    grid-area: 1/1/4/2;
+    color: rgb(173, 181, 189);
+    padding: 20px 0px 0px 0px;
+    opacity: 60%;
+    filter: blur(3px);
+    z-index: 2;
+}
+
+.signature.quatre {
+    grid-area: 1/1/4/2;
+    filter: blur(3px);
+    opacity: 90%;
+    color: rgb(73, 80, 87);
+    padding: 30px 0px 0px 0px;
+    z-index: 1;
 }
