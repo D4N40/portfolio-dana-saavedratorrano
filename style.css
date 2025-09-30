@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(33, 37, 41);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.lien {
+    list-style: none;
+    display: flex;
+
+}
+
+.lien li {
+    display: flex;
+    align-items: center;
+    margin: 0 70px;
+}
+
+.lien a {
+    text-decoration: none;
+    color: white;
+    font-size: 32px;
+}
+
+.lien a:hover {
+    text-decoration: underline;
+}
