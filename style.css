@@ -8,9 +8,7 @@
     font-family: "Abhaya Libre";
 }
 
-.svg {
-    fill: white
-}
+
 
 
 body {
@@ -102,8 +100,26 @@ h1 {
     z-index: 1;
 }
 
+h2 {
+    font-size: 100px;
+    color: white;
+    font-family: "Abhaya Libre";
+    font-weight: normal;
+
+}
+
 p {
     color: white;
     font-family: "Abhaya Libre";
     font-size: 40px;
+}
+
+.svg {
+    width: 100px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: auto auto;
+
 }
