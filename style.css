@@ -64,11 +64,15 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10% 0 10% 0;
-    
+    height:100vh;
 }
 
-.logo {
+.section.entete{
+    margin: 10% 0 10% 0;
+    height: auto;
+}
+
+.héros{
     display: grid;
 }
 
@@ -136,6 +140,7 @@ p {
     align-items: center;
 }
 
+
 .ligne{
     height: 1px;
     width: 80%;
@@ -152,4 +157,15 @@ img{
     border-width: 20px;
     border-style: solid;
     border-color:  rgb(73, 80, 87);
+    margin: 0 2% 0 2%;
 }
+
+
+p.propos{
+    width:45%;
+}
+
+.categorie{
+    grid-area: 1/2/1/2;
+}
+
