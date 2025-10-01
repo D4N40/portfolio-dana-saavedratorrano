@@ -23,9 +23,21 @@ nav {
     padding: 15px;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    color: white;
+    font-family: "Abhaya Libre";
+
+}
+
 .lien {
     list-style: none;
     display: flex;
+    font-family: "Abhaya Libre";
 
 }
 
@@ -117,7 +129,7 @@ p {
 }
 
 .svg {
-    width: 100px;
+    width: 90px;
     margin: 30px;
 }
 
