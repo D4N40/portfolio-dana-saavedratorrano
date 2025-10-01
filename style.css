@@ -8,6 +8,10 @@
     font-family: "Abhaya Libre";
 }
 
+.svg {
+    fill: white
+}
+
 
 body {
     background-color: rgb(33, 37, 41);
@@ -96,4 +100,10 @@ h1 {
     color: rgb(73, 80, 87);
     padding: 30px 0px 0px 0px;
     z-index: 1;
+}
+
+p {
+    color: white;
+    font-family: "Abhaya Libre";
+    font-size: 40px;
 }
