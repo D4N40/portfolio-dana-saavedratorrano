@@ -13,32 +13,28 @@
 
 body {
     background-color: rgb(33, 37, 41);
-
+    font-family: "Abhaya Libre";
+    color: white;
 }
 
 nav {
     display: flex;
+    
     justify-content: center;
     align-items: center;
     padding: 15px;
 }
+
 
 footer {
     display: flex;
     justify-content: center;
 }
 
-span {
-    color: white;
-    font-family: "Abhaya Libre";
-
-}
 
 .lien {
     list-style: none;
     display: flex;
-    font-family: "Abhaya Libre";
-
 }
 
 .lien li {
@@ -49,9 +45,8 @@ span {
 
 .lien a {
     text-decoration: none;
-    color: white;
     font-size: 32px;
-    font-family: "Abhaya Libre";
+    color: white;
 
 }
 
@@ -72,7 +67,6 @@ span {
 }
 
 h1 {
-    color: white;
     font-family: "Tarekah";
     font-weight: normal;
     font-size: 150px;
@@ -115,16 +109,12 @@ h1 {
 
 h2 {
     font-size: 100px;
-    color: white;
-    font-family: "Abhaya Libre";
     font-weight: normal;
     display: flex;
     justify-content: center;
 }
 
 p {
-    color: white;
-    font-family: "Abhaya Libre";
     font-size: 40px;
 }
 
