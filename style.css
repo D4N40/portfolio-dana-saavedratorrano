@@ -13,6 +13,7 @@
 
 body {
     background-color: rgb(33, 37, 41);
+
 }
 
 nav {
@@ -105,7 +106,8 @@ h2 {
     color: white;
     font-family: "Abhaya Libre";
     font-weight: normal;
-
+    display: flex;
+    justify-content: center;
 }
 
 p {
@@ -116,10 +118,12 @@ p {
 
 .svg {
     width: 100px;
+    margin: 30px;
 }
 
 .info {
-    display: grid;
-    grid-template-columns: auto auto;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
