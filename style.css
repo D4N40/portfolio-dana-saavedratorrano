@@ -24,11 +24,11 @@ body {
 
 nav {
     display: flex;
-    
     justify-content: center;
     align-items: center;
     padding: 15px;
 }
+
 
 
 footer {
@@ -59,12 +59,13 @@ footer {
     text-decoration: underline;
 }
 
-.en-tete {
+.section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin: 10% 0 10% 0;
+    
 }
 
 .logo {
@@ -141,4 +142,14 @@ p {
     background-color: white;
     padding: 10px;
     box-shadow: 0 0 7px 7px  white;
+}
+
+img{
+    width: 40%;
+}
+
+.couverture{
+    border-width: 20px;
+    border-style: solid;
+    border-color:  rgb(73, 80, 87);
 }
