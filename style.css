@@ -17,6 +17,11 @@ body {
     color: white;
 }
 
+.page{
+    max-width: 1440px;
+    margin: 0 auto 0 auto;  
+}
+
 nav {
     display: flex;
     
@@ -128,4 +133,12 @@ p {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+}
+
+.ligne{
+    height: 1px;
+    width: 80%;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 0 9px 9px  white;
 }
