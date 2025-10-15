@@ -17,9 +17,9 @@ body {
     color: white;
 }
 
-.page{
+.page {
     max-width: 1440px;
-    margin: 0 auto 0 auto;  
+    margin: 0 auto 0 auto;
 }
 
 nav {
@@ -34,6 +34,7 @@ nav {
 footer {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
 }
 
 
@@ -59,20 +60,20 @@ footer {
     text-decoration: underline;
 }
 
-.section{
+.section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height:100vh;
+    height: 100vh;
 }
 
-.section.entete{
+.section.entete {
     margin: 10% 0 10% 0;
     height: auto;
 }
 
-.héros{
+.héros {
     display: grid;
 }
 
@@ -141,31 +142,46 @@ p {
 }
 
 
-.ligne{
+.ligne {
     height: 1px;
     width: 80%;
     background-color: white;
     padding: 10px;
-    box-shadow: 0 0 7px 7px  white;
+    box-shadow: 0 0 7px 7px white;
 }
 
-img{
+img {
     width: 40%;
 }
 
-.couverture{
+.couverture {
     border-width: 20px;
     border-style: solid;
-    border-color:  rgb(73, 80, 87);
+    border-color: rgb(73, 80, 87);
     margin: 0 2% 0 2%;
 }
 
 
-p.propos{
-    width:45%;
+p.propos {
+    width: 45%;
 }
 
-.categorie{
+.categorie {
     grid-area: 1/2/1/2;
 }
 
+.competences {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 120px;
+}
+
+.logo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: 40px;
+    column-gap: 60px;
+}
