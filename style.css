@@ -8,18 +8,24 @@
     font-family: "Abhaya Libre";
 }
 
-
+html {
+    height: 100%;
+}
 
 
 body {
     background-color: rgb(33, 37, 41);
     font-family: "Abhaya Libre";
     color: white;
+    height: 100%;
+    margin: 0;
 }
 
 .page {
     max-width: 1440px;
+    min-height: 100vh;
     margin: 0 auto 0 auto;
+    position: relative;
 }
 
 nav {
@@ -32,9 +38,10 @@ nav {
 
 
 footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -65,16 +72,20 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 .section.entete {
     margin: 10% 0 10% 0;
     height: auto;
+
 }
 
-.héros {
+.heros {
     display: grid;
+    justify-items: center;
+    position: relative;
+
 }
 
 h1 {
@@ -166,10 +177,6 @@ p.propos {
     width: 45%;
 }
 
-.categorie {
-    grid-area: 1/2/1/2;
-}
-
 .competences {
     display: flex;
     justify-content: center;
@@ -179,9 +186,14 @@ p.propos {
 
 .logo {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
     row-gap: 40px;
     column-gap: 60px;
+}
+
+.categorie {
+    position: absolute;
+    bottom: 30px;
 }
