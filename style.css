@@ -180,12 +180,13 @@ img {
 }
 
 
+
 p.propos {
     width: 45%;
 }
 
 .info.propos {
-    gap: 5vw;
+    gap: 10vw;
 }
 
 
