@@ -1,0 +1,68 @@
+[
+    {
+        "id": 1,
+        "title": "Paysage",
+        "category": "3d",
+        "images": [
+            "./video/paysage.mp4"
+        ],
+        "resume": "Le passage entre le moment l'épreuve et la reconstruction de soi.",
+        "description": "On devait réaliser un environnement 3D et plusieurs séquences d’animation autour du même thème. En s'inspirant de ce qui avait été fait dans notre cours d’audio pour imaginer les animations qui accompagnent l’audio. J'ai fait un court-métrage qui illustre le passage d'un moment d’épreuve à la renaissance ou la reconstruction de soi en utilisant des objets abstraits. L’obscurité représente la solitude et l’épreuve, tandis que la lumière ( les couleurs claires) représente le bien-être.",
+        "equipe": false,
+        "logiciel": [
+            "./img/icon/Icon_of_maya_2023.png"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Solysse",
+        "category": "3d",
+        "images": [
+            "./img/solysse/solysse_1.jpg",
+            "./img/solysse/solysse_2.jpg",
+            "./img/solysse/solysse_3.jpg"
+        ],
+        "resume": "Solysse est une petite âme solitaire qui vagabonde à la recherche d'une famille.",
+        "description": "On devait inventer un personnage inspiré d’un des univers proposés dans le cours.De plus, on devait modéliser le personnage, en s’éloignant le plus possible du réalisme.",
+        "equipe": false,
+        "logiciel": [
+            "./img/icon/Icon_of_maya_2023.png"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Paranoia douce",
+        "category": "Vidéo",
+        "images": [
+            "./video/paranoia_douce.mp4"
+        ],
+        "resume": "Le personnage principal est peu à peu et lentement envahi par la peur et l'anxiété.",
+        "description": "On devait créer une vidéo sur le corps humain où l’accumulation d’images exprime un sentiment ou raconte une histoire en 1 minute 30. On avait comme défi de créer une vidéo dont la palette de couleur tourne autour du rouge. En utilisant la caméra avec le macro, on a réussi à filmer des parties du corps et le mouvement de certaines. On a essayé de recréer ce que ressent une personne qui vit de l'anxiété et de la peur. ",
+        "equipe": true,
+        "logiciel": [
+            "./img/icon/davinci_resolve_macos_bigsur_icon_190261.png"
+        ],
+        "coequipier": [
+            "Meena Atai",
+            "Bradley Fosu",
+            "Flor Michell De La Cruz Montano"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Potrait",
+        "category": "Photographie",
+        "images": [
+            "./img/portrait/portrait_1.jpg",
+            "./img/portrait/portrait_2.jpg",
+            "./img/portrait/portrait_3.jpg",
+            "./img/portrait/portrait_4.jpg"
+        ],
+        "resume": "Mon portrait montre le monde qui tourne autour de Coraline et qui la décrit.",
+        "description": "Le prof nous a demandé de faire le portrait psychologique de notre sujet. Pour cela, on pouvait présenter son monde, son environnement dans lequel il vit et présenter des éléments significatifs composant celui-ci. J'ai pris plusieurs photos de Coraline en action dans ses passion. Cependant, j'ai décidé de prendre une photo de ses yeux et de l'ajouter dans ce projet parce que je sens que c'est un de ses beaux traits qui ressort le plus.",
+        "equipe": false,
+        "logiciel": [
+            "./img/icon/adobe_lightroom_classic_macos_bigsur_icon_190439.png"
+        ]
+    }
+]
