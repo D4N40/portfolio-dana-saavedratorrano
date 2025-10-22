@@ -175,10 +175,17 @@ img {
 .couverture {
     border-width: 20px;
     border-style: solid;
+    border-radius: 5%;
     border-color: rgb(73, 80, 87);
     margin: 0 2% 0 2%;
 }
 
+.couverture:hover{
+    filter: brightness(50%);
+    border-width: 0px;
+    width: 44%;
+    animation-duration: 10s;
+}
 
 
 p.propos {
