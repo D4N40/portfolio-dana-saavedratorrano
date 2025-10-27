@@ -8,10 +8,7 @@
     font-family: "Abhaya Libre";
 }
 
-@keyframes anim { 
-    from { transform: translateX(0%) } 
-    to { transform: translateX(400%) }  
-  }
+
 
 html {
     height: 100%;
@@ -180,49 +177,72 @@ img {
 }
 
 .couverture {
-    border-width: 20px;
-    border-style: solid;
-    border-radius: 5%;
-    border-color: rgb(73, 80, 87);
-    margin: 0 2% 0 2%;
-    width:28.5vw;
+    position: relative;
+    width: 28.5vw;
     height: 40vh;
+    border: 20px solid rgb(73, 80, 87);
+    border-radius: 5%;
+    overflow: hidden;
     background-size: cover;
-    background-repeat: no-repeat;
-
+    background-position: center;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.couverture:hover{
-    filter: brightness(50%);
-    border-width: 0px;
+.couverture::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.5s ease, transform 0.5s ease;
+    z-index: 0;
+}
+
+.couverture:hover::after {
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: scale(1.05);
+}
+
+.couverture:hover {
+    border-width: 0;
     width: 31vw;
     height: 45vh;
-    animation-duration: 10s;
 }
 
-.couverture:nth-child(1){
+.couverture:nth-child(1) {
     background-image: url("./img/couverture/couverture_paysage.jpg");
 
 }
 
-.couverture:nth-child(2){
+.couverture:nth-child(2) {
     background-image: url("./img/couverture/couverture_solysse.jpg");
 
 }
 
-.couverture:nth-child(3){
+.couverture:nth-child(3) {
     background-image: url("./img/couverture/couverture_paranoia_douce.jpg");
 
 }
 
-.couverture:nth-child(4){
+.couverture:nth-child(4) {
     background-image: url("./img/couverture/couverture_portrait.jpg");
 
 }
 
-.carrousel{
+.carrousel {
     display: flex;
     flex-direction: row;
+    gap: 2%;
+}
+
+.couverture>* {
+    position: relative;
+    z-index: 1;
 }
 
 p.propos {
