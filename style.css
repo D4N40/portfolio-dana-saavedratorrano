@@ -149,7 +149,6 @@ p {
     font-size: 40px;
 }
 
-
 .ligne {
     height: 1px;
     width: 80%;
@@ -166,58 +165,21 @@ img {
     position: relative;
     width: 28.5vw;
     height: 40vh;
+    transition: 0.5s;
+    display: block;
     border: 20px solid rgb(73, 80, 87);
     border-radius: 5%;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-    transition: 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.couverture::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0);
-    transition: background-color 0.5s ease, transform 0.5s ease;
-    z-index: 0;
-}
-
-.couverture:hover::after {
-    background-color: rgba(0, 0, 0, 0.7);
-    transform: scale(1.05);
+.couverture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5%;
 }
 
 .couverture:hover {
     border-width: 0;
-    width: 31vw;
-    height: 45vh;
-}
-
-.couverture:nth-child(1) {
-    background-image: url("./img/couverture/couverture_paysage.jpg");
-
-}
-
-.couverture:nth-child(2) {
-    background-image: url("./img/couverture/couverture_solysse.jpg");
-
-}
-
-.couverture:nth-child(3) {
-    background-image: url("./img/couverture/couverture_paranoia_douce.jpg");
-
-}
-
-.couverture:nth-child(4) {
-    background-image: url("./img/couverture/couverture_portrait.jpg");
-
 }
 
 .carrousel {
@@ -226,10 +188,6 @@ img {
     gap: 2%;
 }
 
-.couverture>* {
-    position: relative;
-    z-index: 1;
-}
 
 p.propos {
     width: 45%;
@@ -245,7 +203,6 @@ p.propos {
     justify-content: center;
     align-items: start;
     gap: 120px;
-
 }
 
 .logo {

@@ -43,10 +43,11 @@ const app = Vue.createApp({
         };
     },
     mounted() {
-        fetch("./projets.json")
+        fetch("./projects.json")
             .then(data => data.json())
             .then(data => {
                 this.projects = data;
+                console.log(this.projects);
                 this.message = "";
             })
             .catch(err => {
@@ -57,18 +58,11 @@ const app = Vue.createApp({
 });
 
 
-app.component('projet', {
-    props: ["ptitle", "presume"],
-    data() { },
-    template: `
-                <div class="couverture">
-                    <h4>{{ptitle}}</h4>
-                    <p class="resume">{{presume}}</p>
-                    <button><a href="page_projet.html?proj-id=1">Voir plus</a></button>
-                </div>
-                `
-});
 
 app.mount('.carrousel');
+
+// code pour récupérer la paramètre d'url proj-id, si existe alors stock le dans une variable 
+// v-if projet.id = variable
+
 
 
