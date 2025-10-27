@@ -149,20 +149,6 @@ p {
     font-size: 40px;
 }
 
-.svg {
-    width: 90px;
-    margin: 30px;
-}
-
-.info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20vw;
-    width: 100%;
-}
-
 
 .ligne {
     height: 1px;
@@ -278,4 +264,18 @@ p.propos {
 .categorie {
     position: absolute;
     bottom: 30px;
+}
+
+.svg {
+    width: 90px;
+    margin: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20vw;
+    width: 100%;
 }

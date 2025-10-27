@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 window.addEventListener("load", () => {
     gsap.from('.signature', {
         y: 100,
@@ -19,4 +21,15 @@ window.addEventListener("load", () => {
         delay: 4
     });
 
+});
+
+
+gsap.from('.carrousel', {
+    y: 100,
+    duration: 2,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: '.carrousel',
+        markers: true
+    }
 });
