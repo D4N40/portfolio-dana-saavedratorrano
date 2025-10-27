@@ -33,3 +33,42 @@ gsap.from('.carrousel', {
         markers: true
     }
 });
+
+
+const app = Vue.createApp({
+    data() {
+        return {
+            message: "Chargement...",
+            projects: []
+        };
+    },
+    mounted() {
+        fetch("./projets.json")
+            .then(data => data.json())
+            .then(data => {
+                this.projects = data;
+                this.message = "";
+            })
+            .catch(err => {
+                console.error(err);
+                this.message = "Erreur de chargement.";
+            });
+    }
+});
+
+
+app.component('projet', {
+    props: ["ptitle", "presume"],
+    data() { },
+    template: `
+                <div class="couverture">
+                    <h4>{{ptitle}}</h4>
+                    <p class="resume">{{presume}}</p>
+                    <button><a href="page_projet.html?proj-id=1">Voir plus</a></button>
+                </div>
+                `
+});
+
+app.mount('.carrousel');
+
+

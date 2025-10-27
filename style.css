@@ -279,3 +279,11 @@ p.propos {
     gap: 20vw;
     width: 100%;
 }
+
+h4 {
+    font-size: 50px
+}
+
+p.resume {
+    font-size: 20px;
+}
