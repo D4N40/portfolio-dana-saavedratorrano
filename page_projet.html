@@ -6,41 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page de projet</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="./script.js"></script>
+    <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script defer src="./projet.js"></script>
 </head>
 
-<body id="page-projet">
-    <div class="page">
-        <header>
-            <nav>
-                <ul class="lien">
-                    <li><a href="./page_accueil.html">Accueil</a></li>
-                    <li><a href="./page_propos.html">À propos</a></li>
-                    <li><a href="./page_contact.html">Contact</a></li>
-                </ul>
-            </nav>
+<body>
+    <div id="page-projet" class="page">
+        <nav>
+            <ul class="lien">
+                <li><a href="./page_accueil.html">Accueil</a></li>
+                <li><a href="./page_propos.html">À propos</a></li>
+                <li><a href="./page_contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <header v-if="project">
+            <div class="section titre">
+                <div class="heros">
+                    <h1 class="signature">{{ project.title }}</h1>
+                    <h1 class="signature deux">{{ project.title }}</h1>
+                    <p class="categorie">{{ project.category }}</p>
+                </div>
+            </div>
         </header>
-
-        <div class="section entete">
-            <div class="heros">
-                <h1 class="signature">Lorem ipsum</h1>
-                <h1 class="signature deux">Lorem ipsum</h1>
-                <p class="categorie">Lorem ipsum</p>
+        <div class="galerie" v-if="project && project.images && project.images.length">
+            <div v-for="(media, index) in project.images" :key="index">
+                <video v-if="media.endsWith('.mp4')" :src="media" controls></video>
+                <img v-else :src="media" alt="Image du projet">
             </div>
         </div>
-        <div class="section">
-            <p class="description"></p>
+        <div class="section" v-if="project">
+            <p class="description">{{ project.description }}</p>
         </div>
 
-        <div class="section equipe">
+        <div class="section equipe" v-if="project && project.coequipier">
+            <h2>Mes coéquipiers</h2>
+            <p v-for="(membre, index) in project.coequipier" :key="index">{{ membre }}</p>
         </div>
 
-        <div class="section logiciel">
+        <div class="section " v-if="project && project.reference && project.referenceTexte">
+            <h2>Planche de référence</h2>
+            <p>{{ project.referenceTexte }}</p>
+            <img :src="project.reference">
+        </div>
+
+        <div class="section " v-if="project && project.scenarimage && project.scenarimageTexte">
+            <h2>Scénarimage</h2>
+            <p>{{ project.scenarimageTexte }}</p>
+            <img :src="project.scenarimage">
+        </div>
+
+        <div class="section " v-if="project && project.probleme && project.problemeTexte">
+            <h2>Problème rencontré</h2>
+            <p>{{ project.problemeTexte }}</p>
+            <img :src="project.probleme">
+        </div>
+
+        <div class="section logiciel" v-if="project">
             <h2>Logiciel utilisé</h2>
+            <img :src="project.logiciel">
         </div>
 
         <footer>
-            <span>©2021 Dana Saavedra-Torrano</span>
+            <span>©<span id="current-year"></span> Dana Saavedra-Torrano</span>
         </footer>
     </div>
 </body>

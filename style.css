@@ -168,6 +168,7 @@ img {
     transition: 0.5s;
     border: 20px solid rgb(73, 80, 87);
     border-radius: 5%;
+     overflow: hidden; 
 }
 
 .couverture img{
@@ -262,10 +263,26 @@ p.propos {
     width: 100%;
 }
 
-h4 {
+h3 {
     font-size: 50px
 }
 
-p.resume {
-    font-size: 20px;
+.resume {
+    font-size: 25px;
+}
+
+.section.titre{
+    height: 60vh;
+}
+
+.galerie{
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, 33%);
+    justify-content: center;
+    
+}
+
+.galerie img{
+    width: 100%;
 }

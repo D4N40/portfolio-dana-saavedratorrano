@@ -12,13 +12,13 @@ window.addEventListener("load", () => {
     });
     gsap.from('.ligne', {
         opacity: 0,
-        delay: 3,
+        delay: 2.5,
         duration: 1
     });
 
     gsap.from('.lien', {
         opacity: 0,
-        delay: 4
+        delay: 3
     });
 
 });
@@ -61,8 +61,14 @@ const app = Vue.createApp({
 
 app.mount('.carrousel');
 
-// code pour récupérer la paramètre d'url proj-id, si existe alors stock le dans une variable 
-// v-if projet.id = variable
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const yearSpan = document.getElementById("current-year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+});
 
 
 

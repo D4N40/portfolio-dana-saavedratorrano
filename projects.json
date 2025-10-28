@@ -13,7 +13,12 @@
         "logiciel": [
             "./img/icon/Icon_of_maya_2023.png"
         ],
-        "info-supp": "fdssdas"
+        "referenceTexte": "Voici ma planche de référence pour chaque objet ou paysage dont je me suis inspiré pour modéliser mes objets et ma scène:",
+        "reference": ["./img/processus_creation_paysage/planche_reference.png"],
+        "scenarimageTexte": "Voici comment j'avais prévu le déroulement de l'animation et du montage vidéo. Cependant, je n'ai pas gardé l'idée des 2 derniers carreaux parce que je ne les trouvait pas nécessaires à l'animation.Il me restait du temps, donc j'ai rajouté à ce moment mon troisième objet qui est une sorte d'escalier enroulé sur lui-même.",
+        "scenarimage":["./img/processus_creation_paysage/scenarimage.png"],
+        "problemeTexte":"Cette image représente l'apparence de ma sphère au début de ma production, lorsque les particules n’étaient pas encore visibles Après plusieurs essais, j'ai réussi à atteindre mon but et à faire apparaître les particules dans mon montage.",
+        "probleme":["./img/processus_creation_paysage/essaie_sphere.png"]
     },
     {
         "id": 2,
@@ -23,10 +28,10 @@
         "images": [
             "./img/solysse/solysse_1.jpg",
             "./img/solysse/solysse_2.jpg",
-            "./img/solysse/solysse_3.jpg"
+            "./img/solysse/solysse_t.jpg"
         ],
         "resume": "Solysse est une petite âme solitaire qui vagabonde à la recherche d'une famille.",
-        "description": "On devait inventer un personnage inspiré d’un des univers proposés dans le cours.De plus, on devait modéliser le personnage, en s’éloignant le plus possible du réalisme.",
+        "description": "On devait inventer un personnage inspiré d’un des univers proposés dans le cours.De plus, on devait modéliser le personnage, en s’éloignant le plus possible du réalisme. n me basant sur la palette de couleurs de l’univers choisi, j’ai conçu Solysse. Son petit cœur lumineux apporte un contraste avec son environnement et souligne le côté chaleureux de son personnage.",
         "role": "Réalisatrice et modélisation",
         "logiciel": [
             "./img/icon/Icon_of_maya_2023.png"

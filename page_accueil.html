@@ -37,18 +37,18 @@
 
         <div class="section projet">
             <h2>Mes projets</h2>
-            <div class="carrousel">
+            <div class="carrousel" >
                 <div v-for="project in projects" :key="project.id" class="couverture">
                     <img :src="project.couverture" alt="project.resume">
                     <a :href="`page_projet.html?proj-id=${project.id}`"><div class="text">
                         <h3>{{ project.title }}</h3>
-                        <p>{{ project.resume }}</p>
+                        <p class="resume">{{ project.resume }}</p>
                     </div></a>
                 </div>
             </div>
         </div>
         <footer>
-            <span>©2021 Dana Saavedra-Torrano</span>
+            <span>©<span id="current-year"></span> Dana Saavedra-Torrano</span>
         </footer>
     </div>
 </body>
