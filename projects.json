@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+        "couverture": "./img/couverture/couverture_paysage.jpg",
         "title": "Paysage",
         "category": "3d",
         "images": [
@@ -8,14 +9,15 @@
         ],
         "resume": "Le passage entre le moment l'épreuve et la reconstruction de soi.",
         "description": "On devait réaliser un environnement 3D et plusieurs séquences d’animation autour du même thème. En s'inspirant de ce qui avait été fait dans notre cours d’audio pour imaginer les animations qui accompagnent l’audio. J'ai fait un court-métrage qui illustre le passage d'un moment d’épreuve à la renaissance ou la reconstruction de soi en utilisant des objets abstraits. L’obscurité représente la solitude et l’épreuve, tandis que la lumière ( les couleurs claires) représente le bien-être.",
-        "role":"Réalisatrice, montage vidéo et sonore, modélisation et animation",
+        "role": "Réalisatrice, montage vidéo et sonore, modélisation et animation",
         "logiciel": [
             "./img/icon/Icon_of_maya_2023.png"
         ],
-        "info-supp":"fdssdas"
+        "info-supp": "fdssdas"
     },
     {
         "id": 2,
+        "couverture": "./img/couverture/couverture_solysse.jpg",
         "title": "Solysse",
         "category": "3d",
         "images": [
@@ -32,6 +34,7 @@
     },
     {
         "id": 3,
+        "couverture": "./img/couverture/couverture_paranoia_douce.jpg",
         "title": "Paranoia douce",
         "category": "Vidéo",
         "images": [
@@ -39,7 +42,7 @@
         ],
         "resume": "Le personnage principal est peu à peu et lentement envahi par la peur et l'anxiété.",
         "description": "On devait créer une vidéo sur le corps humain où l’accumulation d’images exprime un sentiment ou raconte une histoire en 1 minute 30. On avait comme défi de créer une vidéo dont la palette de couleur tourne autour du rouge. En utilisant la caméra avec le macro, on a réussi à filmer des parties du corps et le mouvement de certaines. On a essayé de recréer ce que ressent une personne qui vit de l'anxiété et de la peur. ",
-        "role":"Réalisatrice, scénariste et montage",
+        "role": "Réalisatrice, scénariste et montage",
         "logiciel": [
             "./img/icon/davinci_resolve_macos_bigsur_icon_190261.png"
         ],
@@ -51,6 +54,7 @@
     },
     {
         "id": 4,
+        "couverture": "./img/couverture/couverture_portrait.jpg",
         "title": "Potrait",
         "category": "Photographie",
         "images": [
@@ -61,7 +65,7 @@
         ],
         "resume": "Mon portrait montre le monde qui tourne autour de Coraline et qui la décrit.",
         "description": "Le prof nous a demandé de faire le portrait psychologique de notre sujet. Pour cela, on pouvait présenter son monde, son environnement dans lequel il vit et présenter des éléments significatifs composant celui-ci. J'ai pris plusieurs photos de Coraline en action dans ses passion. Cependant, j'ai décidé de prendre une photo de ses yeux et de l'ajouter dans ce projet parce que je sens que c'est un de ses beaux traits qui ressort le plus.",
-        "role":"Photographe et réalisatrice",
+        "role": "Photographe et réalisatrice",
         "logiciel": [
             "./img/icon/adobe_lightroom_classic_macos_bigsur_icon_190439.png"
         ]

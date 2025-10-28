@@ -166,7 +166,6 @@ img {
     width: 28.5vw;
     height: 40vh;
     transition: 0.5s;
-    display: block;
     border: 20px solid rgb(73, 80, 87);
     border-radius: 5%;
 }
@@ -174,13 +173,39 @@ img {
 .couverture img{
     width: 100%;
     height: 100%;
+    display: block;
     object-fit: cover;
     border-radius: 5%;
+    transition: 0.5s;
+}
+
+.text{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+    color: white;
 }
 
 .couverture:hover {
     border-width: 0;
 }
+
+.couverture:hover img {
+  transform: scale(1.1);
+  filter:brightness(50%);
+}
+
+.couverture:hover .text{
+    opacity: 1;
+}
+
 
 .carrousel {
     display: flex;
