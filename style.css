@@ -7,6 +7,7 @@
     src: url("./police/Abhaya_Libre/AbhayaLibre-Regular.ttf") format("truetype");
     font-family: "Abhaya Libre";
 }
+
 /*Permet de d'importer une police locale */
 
 /*Style du html et body */
@@ -95,7 +96,8 @@ header {
 
 /* Style de la signature */
 .heros {
-    display: grid; /*M'a permis de superposer les signatures */
+    display: grid;
+    /*M'a permis de superposer les signatures */
     justify-items: center;
     position: relative;
 
@@ -109,7 +111,7 @@ h1 {
     font-size: 8vw;
 }
 
-/*Le grid-area m'a permis de superposer les signature */ 
+/*Le grid-area m'a permis de superposer les signature */
 .signature {
     font-style: italic;
     grid-area: 1/1/2/2;
@@ -207,16 +209,19 @@ img {
     color: white;
     text-align: center;
 }
+
 /*Le :hover permet de mettre des effets au faire des changements au survol de la souris */
 .couverture:hover {
     border-width: 0;
     box-shadow: 0 0 15px 15px rgb(73, 80, 87);
 }
+
 /*Lorsque couverture est survoler, l'image obtient un filtre et devient plus grands */
 .couverture:hover img {
     transform: scale(1.1);
     filter: brightness(50%);
 }
+
 /*Lorsque la couverture et survoler, le texte apparait */
 .couverture:hover .text {
     opacity: 1;
@@ -278,7 +283,7 @@ p.propos {
 }
 
 /*Enleve le text-decoration, puisque l'autre a au survol a un text-direction*/
-.info a{
+.info a {
     text-decoration: none;
 }
 
@@ -300,6 +305,7 @@ h3 {
     gap: 2%;
     justify-content: center;
 }
+
 /*:has permet de mettre des paramètres au .galerie si il a des images */
 .galerie:has(img) {
     grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
@@ -339,33 +345,80 @@ h3 {
     box-shadow: 0 0 15px 15px rgb(73, 80, 87);
 }
 
-#page-projet .section {
-    margin: 5% 0 5% 0;
-}
+
 
 /* Ceci permet de changer la disposition ou les valeurs lorsque le viewport répond aux restrictions*/
 /*Ceci et les vw/vh/% ont permis de faire la page responsive */
 @media (max-width: 768px) {
+
     /*Permet de changer la taille de celui-ci */
     .section.projet {
         margin-top: 10vh;
         height: auto;
     }
-/*Permet de changer la direction du carrousel */
+
+    /*Permet de changer la direction du carrousel */
     .carrousel {
         display: flex;
         flex-direction: column;
         gap: 20px;
 
     }
+
     /*Permet de changer la taille de celui-ci */
     .couverture {
         height: 30vh;
     }
-/*Permet de changer la direction du carrousel */
-    .info{
+
+    /*Permet de changer la direction du carrousel */
+    .info {
         flex-direction: column;
         gap: 5vw;
         text-align: center;
     }
+
+    h2 {
+        font-size: 9vw;
+        text-align: center;
+    }
+
+    a {
+        font-size: 4vw;
+
+    }
+
+    p {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .lien li {
+        margin: 0 40px;
+    }
+
+    .competences {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 120px;
+    }
+
+    .page.propos footer {
+        padding-top: 30vh;
+    }
+
+    footer {
+        padding-bottom: 2%;
+        padding-top: 50%;
+    }
+
+    p.propos {
+        width:100%;
+    }
+
+    .profil{
+        width: 70%;
+    }
+
 }
