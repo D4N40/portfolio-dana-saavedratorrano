@@ -43,22 +43,27 @@
             <p v-for="(membre, index) in project.coequipier" :key="index">{{ membre }}</p>
         </div>
 
+        <div class="section" v-if="project">
+            <h2>Rôle</h2>
+            <p class="role">{{ project.role}}</p>
+        </div>
+
         <div class="section " v-if="project && project.reference && project.referenceTexte">
             <h2>Planche de référence</h2>
             <p>{{ project.referenceTexte }}</p>
-            <img :src="project.reference">
+            <img :src="project.reference" class="extra">
         </div>
 
         <div class="section " v-if="project && project.scenarimage && project.scenarimageTexte">
             <h2>Scénarimage</h2>
             <p>{{ project.scenarimageTexte }}</p>
-            <img :src="project.scenarimage">
+            <img :src="project.scenarimage" class="extra">
         </div>
 
         <div class="section " v-if="project && project.probleme && project.problemeTexte">
             <h2>Problème rencontré</h2>
             <p>{{ project.problemeTexte }}</p>
-            <img :src="project.probleme">
+            <img :src="project.probleme" class="extra">
         </div>
 
         <div class="section logiciel" v-if="project">
