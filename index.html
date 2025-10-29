@@ -37,18 +37,24 @@
 
         <div class="section projet">
             <h2>Mes projets</h2>
-            <div class="carrousel" >
+            <div class="carrousel">
+                <!-- Ceci permet de créer une couverture par projet-->
                 <div v-for="project in projects" :key="project.id" class="couverture">
                     <img :src="project.couverture" alt="project.resume">
-                    <a :href="`page_projet.html?proj-id=${project.id}`"><div class="text">
-                        <h3>{{ project.title }}</h3>
-                        <p class="resume">{{ project.resume }}</p>
-                    </div></a>
+                    <!-- Ceci permet d'identifier le projet par son id -->
+                    <a :href="`page_projet.html?proj-id=${project.id}`">
+                        <div class="text">
+                            <!-- Ceci permet de récupérer la propriétés titre dans le data.json-->
+                            <h3>{{ project.title }}</h3>
+                            <!-- Ceci permet de récupérer la propriété resume dans le data.json-->
+                            <p class="resume">{{ project.resume }}</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
         <footer>
-            <span>©<span id="current-year"></span> Dana Saavedra-Torrano</span>
+            <span>© <span id="current-year"></span> Dana Saavedra-Torrano</span>
         </footer>
     </div>
 </body>

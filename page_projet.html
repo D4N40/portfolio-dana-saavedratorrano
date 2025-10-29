@@ -22,50 +22,54 @@
         <header v-if="project">
             <div class="section titre">
                 <div class="heros">
+                    <!-- Ceci permet de récupérer la propriété title du projet si le projet existe dans le data.json-->
                     <h1 class="signature">{{ project.title }}</h1>
                     <h1 class="signature deux">{{ project.title }}</h1>
                     <p class="categorie">{{ project.category }}</p>
                 </div>
             </div>
         </header>
+        <!-- Ceci permet de créer une balise image si des images existent dans le projet ou de créer une balise vidéo si une vidéo existe dans le projet dans data.json-->
+        <!-- Ceci permet de récupérer chaque image dans le tableau dans le projet dans le data.json-->
         <div class="galerie" v-if="project && project.images && project.images.length">
             <div v-for="(media, index) in project.images" :key="index">
                 <video v-if="media.endsWith('.mp4')" :src="media" controls></video>
                 <img v-else :src="media" alt="Image du projet">
             </div>
         </div>
+        <!-- Ceci permet de récupérer la propriété description du projet si le projet existe dans le data.json-->
         <div class="section" v-if="project">
             <p class="description">{{ project.description }}</p>
         </div>
-
+        <!-- Ceci permet de récupérer la propriété coequipier et de passer à travers le tableau du projet si le projet et si la propriété coequipier existe dans le data.json-->
         <div class="section equipe" v-if="project && project.coequipier">
             <h2>Mes coéquipiers</h2>
             <p v-for="(membre, index) in project.coequipier" :key="index">{{ membre }}</p>
         </div>
-
+        <!-- Ceci permet de récupérer la propriété roledu projet si le projet existe dans le data.json-->
         <div class="section" v-if="project">
             <h2>Rôle</h2>
             <p class="role">{{ project.role}}</p>
         </div>
-
+        <!-- Ceci permet de récupérer la propriété description du projet si le projet,la propriété reference et la propriété referenceTexte existe dans le data.json-->
         <div class="section " v-if="project && project.reference && project.referenceTexte">
             <h2>Planche de référence</h2>
             <p>{{ project.referenceTexte }}</p>
             <img :src="project.reference" class="extra">
         </div>
-
+        <!-- Ceci permet de récupérer la propriété description du projet si le projet, la propriété scenarimage et la propriété scenarimageTexte existe dans le data.json-->
         <div class="section " v-if="project && project.scenarimage && project.scenarimageTexte">
             <h2>Scénarimage</h2>
             <p>{{ project.scenarimageTexte }}</p>
             <img :src="project.scenarimage" class="extra">
         </div>
-
+        <!-- Ceci permet de récupérer la propriété description du projet si le projet, la propriété probleme et la propriété problemeTexte existe dans le data.json-->
         <div class="section " v-if="project && project.probleme && project.problemeTexte">
             <h2>Problème rencontré</h2>
             <p>{{ project.problemeTexte }}</p>
             <img :src="project.probleme" class="extra">
         </div>
-
+        <!-- Ceci permet de récupérer la propriété logiciel du projet si le projet existe dans le data.json-->
         <div class="section logiciel" v-if="project">
             <h2>Logiciel utilisé</h2>
             <img :src="project.logiciel">
