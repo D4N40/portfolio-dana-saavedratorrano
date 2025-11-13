@@ -60,7 +60,7 @@
     {
         "id": 4,
         "couverture": "./img/couverture/couverture_portrait.jpg",
-        "title": "Potrait",
+        "title": "Portrait",
         "category": "Photographie",
         "images": [
             "./img/portrait/portrait_1.jpg",
