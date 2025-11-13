@@ -34,7 +34,7 @@
         <div class="galerie" v-if="project && project.images && project.images.length">
             <div v-for="(media, index) in project.images" :key="index">
                 <video v-if="media.endsWith('.mp4')" :src="media" controls></video>
-                <img v-else :src="media" alt="Image du projet">
+                <img v-else :src="media" alt="Image du projet" id="lightbox">
             </div>
         </div>
         <!-- Ceci permet de récupérer la propriété description du projet si le projet existe dans le data.json-->

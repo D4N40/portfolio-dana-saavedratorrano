@@ -24,6 +24,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 
 }
 
@@ -43,7 +44,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding-top: 2%;
 
 }
@@ -61,12 +61,13 @@ footer {
 .lien {
     list-style: none;
     display: flex;
+    padding: 0;
 }
 
 .lien li {
-    display: flex;
-    align-items: center;
+
     margin: 0 70px;
+    text-align: center;
 }
 
 a {
@@ -85,7 +86,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: auto;
 }
 
 header {
@@ -208,7 +209,9 @@ img {
     transition: 0.5s;
     color: white;
     text-align: center;
+
 }
+
 
 /*Le :hover permet de mettre des effets au faire des changements au survol de la souris */
 .couverture:hover {
@@ -287,6 +290,10 @@ p.propos {
     text-decoration: none;
 }
 
+.info p a {
+    font-size: 2vw;
+}
+
 h3 {
     font-size: 50px;
 }
@@ -304,6 +311,7 @@ h3 {
     flex-direction: row;
     gap: 2%;
     justify-content: center;
+
 }
 
 /*:has permet de mettre des paramètres au .galerie si il a des images */
@@ -348,30 +356,26 @@ h3 {
 /*Ceci et les vw/vh/% ont permis de faire la page responsive */
 @media (max-width: 768px) {
 
-    /*Permet de changer la taille de celui-ci */
     .section.projet {
-        margin-top: 10vh;
+        margin-top: 5vh;
         height: auto;
     }
 
-    /*Permet de changer la direction du carrousel */
     .carrousel {
-        display: flex;
         flex-direction: column;
         gap: 20px;
-
     }
 
-    /*Permet de changer la taille de celui-ci */
     .couverture {
         height: 30vh;
+        border-width: 10px;
     }
 
-    /*Permet de changer la direction du carrousel */
     .info {
         flex-direction: column;
         gap: 5vw;
         text-align: center;
+        align-items: center;
     }
 
     h2 {
@@ -380,8 +384,7 @@ h3 {
     }
 
     a {
-        font-size: 4vw;
-
+        font-size: 4.5vw;
     }
 
     p {
@@ -389,25 +392,24 @@ h3 {
         text-align: center;
     }
 
+    .info p a {
+        font-size: 4vw;
+    }
+
     .lien li {
-        margin: 0 40px;
+        margin: 0 25px;
     }
 
     .competences {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 120px;
-    }
-
-    .page.propos footer {
-        padding-top: 30vh;
+        gap: 60px;
     }
 
     footer {
-        padding-bottom: 2%;
-        padding-top: 50%;
+        padding-top: 10vh;
+        padding-bottom: 5vh;
     }
 
     p.propos {
