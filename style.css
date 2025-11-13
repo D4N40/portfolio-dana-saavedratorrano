@@ -321,10 +321,7 @@ h3 {
     transition: 0.5s;
 }
 
-.galerie img:hover {
-    transform: scale(1.3);
-    box-shadow: 0 0 15px 15px rgb(73, 80, 87);
-}
+
 
 .galerie video {
     width: 100%;
@@ -414,11 +411,28 @@ h3 {
     }
 
     p.propos {
-        width:100%;
+        width: 100%;
     }
 
-    .profil{
+    .profil {
         width: 70%;
+    }
+
+    .ligne {
+        height: 0.1vh;
+        box-shadow: 0 0 4px 4px white;
+    }
+
+    .signature.deux {
+        padding: 2px 0px 0px 0px;
+    }
+
+    .signature.trois {
+        padding: 7px 0px 0px 0px;
+    }
+
+    .signature.quatre {
+        padding: 15px 0px 0px 0px;
     }
 
 }
