@@ -8,16 +8,16 @@
             "./video/paysage.mp4"
         ],
         "resume": "Le passage entre le moment l'épreuve et la reconstruction de soi.",
-        "description": "On devait réaliser un environnement 3D et plusieurs séquences d’animation autour du même thème. En s'inspirant de ce qui avait été fait dans notre cours d’audio pour imaginer les animations qui accompagnent l’audio. J'ai fait un court-métrage qui illustre le passage d'un moment d’épreuve à la renaissance ou la reconstruction de soi en utilisant des objets abstraits. L’obscurité représente la solitude et l’épreuve, tandis que la lumière ( les couleurs claires) représente le bien-être.",
+        "description": "On devait réaliser un environnement 3D et plusieurs séquences d’animation autour du même thème. En s'inspirant de ce qui avait été fait dans notre cours d’audio pour imaginer les animations qui accompagnent l’audio, j'ai fait un court-métrage qui illustre le passage d'un moment d’épreuve à la renaissance ou la reconstruction de soi en utilisant des objets abstraits. L’obscurité représente la solitude et l’épreuve, tandis que la lumière ( es couleurs claires) représente le bien-être.",
         "role": "Réalisatrice, montage vidéo et sonore, modélisation et animation",
         "logiciel": [
             "./img/icon/Icon_of_maya_2023.png"
         ],
         "referenceTexte": "Voici ma planche de référence pour chaque objet ou paysage dont je me suis inspiré pour modéliser mes objets et ma scène:",
         "reference": ["./img/processus_creation_paysage/planche_reference.png"],
-        "scenarimageTexte": "Voici comment j'avais prévu le déroulement de l'animation et du montage vidéo. Cependant, je n'ai pas gardé l'idée des 2 derniers carreaux parce que je ne les trouvait pas nécessaires à l'animation.Il me restait du temps, donc j'ai rajouté à ce moment mon troisième objet qui est une sorte d'escalier enroulé sur lui-même.",
+        "scenarimageTexte": "Voici comment j'avais prévu le déroulement de l'animation et du montage vidéo. Cependant, je n'ai pas gardé l'idée des 2 derniers carreaux parce que je ne les trouvait pas nécessaires à l'animation. Il me restait du temps, donc j'ai rajouté à ce moment mon troisième objet qui est une sorte d'escalier enroulé sur lui-même.",
         "scenarimage":["./img/processus_creation_paysage/scenarimage.png"],
-        "problemeTexte":"Cette image représente l'apparence de ma sphère au début de ma production, lorsque les particules n’étaient pas encore visibles Après plusieurs essais, j'ai réussi à atteindre mon but et à faire apparaître les particules dans mon montage.",
+        "problemeTexte":"Cette image représente l'apparence de ma sphère au début de ma production, lorsque les particules n’étaient pas encore visibles. Après plusieurs essais, j'ai réussi à atteindre mon but et à faire apparaître les particules dans mon montage.",
         "probleme":["./img/processus_creation_paysage/essaie_sphere.png"]
     },
     {
@@ -31,7 +31,7 @@
             "./img/solysse/solysse_t.jpg"
         ],
         "resume": "Solysse est une petite âme solitaire qui vagabonde à la recherche d'une famille.",
-        "description": "On devait inventer un personnage inspiré d’un des univers proposés dans le cours.De plus, on devait modéliser le personnage, en s’éloignant le plus possible du réalisme. n me basant sur la palette de couleurs de l’univers choisi, j’ai conçu Solysse. Son petit cœur lumineux apporte un contraste avec son environnement et souligne le côté chaleureux de son personnage.",
+        "description": "On devait inventer un personnage inspiré d’un des univers proposés dans le cours. De plus, on devait modéliser le personnage, en s’éloignant le plus possible du réalisme en me basant sur la palette de couleurs de l’univers choisi, j’ai conçu Solysse. Son petit cœur lumineux apporte un contraste avec son environnement et souligne le côté chaleureux de son personnage.",
         "role": "Réalisatrice et modélisation",
         "logiciel": [
             "./img/icon/Icon_of_maya_2023.png"
@@ -69,7 +69,7 @@
             "./img/portrait/portrait_4.jpg"
         ],
         "resume": "Mon portrait montre le monde qui tourne autour de Coraline et qui la décrit.",
-        "description": "Le prof nous a demandé de faire le portrait psychologique de notre sujet. Pour cela, on pouvait présenter son monde, son environnement dans lequel il vit et présenter des éléments significatifs composant celui-ci. J'ai pris plusieurs photos de Coraline en action dans ses passion. Cependant, j'ai décidé de prendre une photo de ses yeux et de l'ajouter dans ce projet parce que je sens que c'est un de ses beaux traits qui ressort le plus.",
+        "description": "Le professeur nous a demandé de faire le portrait psychologique de notre sujet. Pour cela, on pouvait présenter son monde, son environnement dans lequel il vit et présenter des éléments significatifs composant celui-ci. J'ai pris plusieurs photos de Coraline en action dans ses passion. Cependant, j'ai décidé de prendre une photo de ses yeux et de l'ajouter dans ce projet parce que je sens que c'est un de ses beaux traits qui ressort le plus.",
         "role": "Photographe et réalisatrice",
         "logiciel": [
             "./img/icon/adobe_lightroom_classic_macos_bigsur_icon_190439.png"

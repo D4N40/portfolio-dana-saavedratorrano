@@ -3,7 +3,8 @@ const appProjet = Vue.createApp({
     data() {
         return {
             message: "Chargement...",
-            project: null
+            project: null,
+            lightboxSrc: null
 
         };
     },
@@ -22,7 +23,15 @@ const appProjet = Vue.createApp({
                 console.error(err);
                 this.message = "Erreur de chargement.";
             });
+    },
+    methods: {
+    openLightbox(src) {
+        this.lightboxSrc = src; 
+    },
+    closeLightbox() {
+        this.lightboxSrc = null; 
     }
+}
 });
 
 /* Lie l'application Vue avec l'élément DOM ayant l'id page-projet*/

@@ -10,6 +10,8 @@
     <script defer src="./projet.js"></script>
 </head>
 
+
+
 <body>
     <div id="page-projet" class="page">
         <nav>
@@ -32,11 +34,17 @@
         <!-- Ceci permet de créer une balise image si des images existent dans le projet ou de créer une balise vidéo si une vidéo existe dans le projet dans data.json-->
         <!-- Ceci permet de récupérer chaque image dans le tableau dans le projet dans le data.json-->
         <div class="galerie" v-if="project && project.images && project.images.length">
-            <div v-for="(media, index) in project.images" :key="index">
+            <div v-for="(media, index) in project.images" :key="index" >
                 <video v-if="media.endsWith('.mp4')" :src="media" controls></video>
-                <img v-else :src="media" alt="Image du projet" id="lightbox">
+                <img v-else :src="media" alt="Image du projet" @click="openLightbox(media)">
             </div>
         </div>
+
+        <div class="lightbox" v-if="lightboxSrc" @click="closeLightbox">
+            <img class="lightbox-img" :src="lightboxSrc">
+            <span class="close" @click.stop="closeLightbox">&times;</span>
+        </div>
+
         <!-- Ceci permet de récupérer la propriété description du projet si le projet existe dans le data.json-->
         <div class="section" v-if="project">
             <p class="description">{{ project.description }}</p>
